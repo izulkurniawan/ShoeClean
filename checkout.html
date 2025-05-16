@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">     
+</head>
+
+<body>
+    <header class="lg:px-16 px-4 bg-black flex flex-wrap items-center py-4 mb-8">
+        <div class="flex-1 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-green-500">SHOE<span class="text-white">CLEAN</span></a>
+        </div>
+    
+        <label for="menu-toggle" class="pointer-cursor md:hidden block">
+          <svg class="fill-current text-gray-900"
+            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <title>NavBar</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+    
+        <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+            <nav>
+              <ul class="md:flex items-center justify-between text-base text-white pt-4 md:pt-0">
+                <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="home.html">HOME</a></li>
+                <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 hover:text-green-500" href="#">GALLERY</a></li>
+                <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 hover:text-green-500" href="#">TESTIMONI</a></li>
+                <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="#">SERVICES</a></li>
+                <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="#">ABOUT</a></li>
+                <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 hover:text-green-500" href="#">LOGIN</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="font-semibold text-2xl ml-8 mb-0">
+        SERVICE > CHECKOUT
+    </div>
+    <div class="grid grid-cols-3 gap-4">
+        <div class="col-span-1">
+          <div class="ml-8">
+            <div class="font-semibold text-xl mb-2">Fast Cleaning</div>
+            <p class="text-base">
+              Fast cleaning merupakan pencucian instan pada bagian upper dan midsole yang bisa ditunggu selama 15-30 menit.
+            </p>
+            <div class="font-semibold text-xl mb-2">Kategori :</div>
+            <div class="grid grid-cols-[80%_auto]">
+              <div class="font-normal text-base">Reguler
+                <div>Estimasi Waktu 1 Jam</div>
+              </div>
+              <div class="font-normal text-base">
+                <div>
+                  <br>
+                  Rp30.000
+                </div>
+              </div>
+            </div>
+            <hr class="h-px my-4 bg-black border-0 dark:bg-black">
+            <div class="grid grid-cols-[80%_auto]">
+              <div class="font-normal text-base">Outsole
+                <div>Estimasi Waktu 1 Jam</div>
+              </div>
+              <div class="font-normal text-base">
+                <div>
+                  <br>
+                  Rp50.000
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1">
+          <img src="img/checkout/checkout2.jpg" class="w-full rounded-3xl">
+        </div>
+        <div class="col-span-1">
+          <div class="ml-8">
+              <div class="w-full max-w-xs">
+                  <form class="bg-white shadow-md rounded-3xl px-8 pt-6 pb-8 mb-4">
+                    <div class="mb-4">
+                      <label class="block text-sm font-semibold mb-2" for="Nama">
+                        Nama
+                      </label>
+                      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Nama" type="text">
+                    </div>
+                    <div class="mb-6">
+                      <label class="block text-sm font-semibold mb-2" for="No.Handphone">
+                        No Handphone
+                      </label>
+                      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="No. Handphone" type="text">
+                      <div class="mb-6">
+                        <label class="text-sm font-semibold mb-2" for="Alamat">
+                          Alamat
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="Alamat" type="text">
+                        <div class="mb-6">
+                          <label class="text-sm font-semibold mb-2" for="Kategori">
+                            Kategori
+                          </label>
+                          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="Kategori" type="Kategori">
+                          <button class="bg-green-500 hover:bg-green-700 text-white font-normal py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                            PICK UP ORDER
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+          </div>
+        </div>
+      </div>
+      <footer class="mt-4 h-[32rem] text-white bg-black">
+        <div class=" grid grid-cols-[60%_auto]">
+            <div class="ml-14 mt-20">
+                <h1 class="text-4xl font-bold text-green-500">
+                    SHOE<span class="text-white mb-5">CLEAN</span>
+                </h1>
+                <P>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, consectetur natus! Ipsa nam possimus esse cumque, provident ullam labore quam! Atque velit est sequi aspernatur. Nisi magnam molestiae vitae ipsum.    
+                </P>
+                <h2 class="text-2xl font-semibold mt-10">
+                    Customer Service
+                </h2>
+                <P>081227585129</P>
+                <h3 class="text-2xl font-semibold mt-6">
+                    Layanan Pickup
+                </h3>
+                <p>084757838247</p>
+            </div>
+            <div class="mt-48 ml-16">
+                <h1 class="text-2xl font-semibold ">
+                    Info Franchise
+                </h1>
+                <P>081227585129</P>
+                <h2 class="text-2xl font-semibold mt-6">
+                    Lokasi Mitra Piyungan
+                </h2>
+                <p>Jl.Piyungan Km 02</p>
+                <h3 class="text-2xl font-semibold mt-6">
+                    Lokasi Mitra Gejayan
+                </h3>
+                <p>Jl.Affandi G.01</p>
+            </div>
+        </div>
+        <center>
+            <hr class="h-px w-[112rem] my-8 bg-white border-0 dark:bg-white">
+        </center>
+    
+        <div class="text-white ml-8 -my-5">
+            Copyright @ 2024 ShoeClean
+        </div>
+    </footer>
+          
+</body>
